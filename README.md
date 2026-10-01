@@ -29,6 +29,50 @@ etapas, uƟlizando o módulo de divisão 11 e pesos distribuídos de 2 a 9.
 Para cada um dos caracteres do CNPJ, atribuir o valor da coluna “Valor para cálculo do DV”,
 conforme a tabela abaixo (ou subtrair 48 do “Valor ASCII”):
 
+| CNPJ | ASCII | Valor Cálculo DV|
+|--|--|--|
+| 0 | 48 | 0 |
+| 1 | 49 | 1 |
+| 2 | 50 | 2 |
+| 3 | 51 | 3 |
+| 4 | 52 | 4 |
+| 5 | 53 | 5 |
+| 6 | 54 | 6 |
+| 7 | 55 | 7 |
+| 8 | 56 | 8 |
+| 9 | 57 | 9 |
+| A | 65 | 17 |
+| B | 66 | 18 |
+| C | 67 | 19 |
+| D | 68 | 20 |
+| E | 69 | 21 |
+| F | 70 | 22 |
+| G | 71 | 23 |
+| H | 72 | 24 |
+| I | 73 | 25 |
+| J | 74 | 26 |
+| K | 75 | 27 |
+| L | 76 | 28 |
+| M | 77 | 29 |
+| N | 78 | 30 |
+| O | 79 | 31 |
+| P | 80 | 32 |
+| Q | 81 | 33 |
+| R | 82 | 34 |
+| S | 83 | 35 |
+| T | 84 | 36 |
+| U | 85 | 37 |
+| V | 86 | 38 |
+| W | 87 | 39 |
+| X | 88 | 40 |
+| Y | 89 | 41 |
+| Z | 90 | 42 |
+
+CNPJ de Exemplo:
+| CNPJ | 1 | 2 | A | B | C | 3 | 4 | 5 | 0 | 1 | D | E |
+|--|--|--|--|--|--|--|--|--|--|--|--|--|
+|Valor | 1 | 2 | 17 | 18 | 19 | 3 | 4 | 5 | 0 | 1 | 20 | 21 |
+
 Distribuir os pesos de 2 a 9 da direita para a esquerda (recomeçando depois do oitavo caracter),
 conforme o exemplo:
 | CNPJ | 1 | 2 | A | B | C | 3 | 4 | 5 | 0 | 1 | D | E |
